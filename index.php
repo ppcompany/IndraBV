@@ -23,7 +23,7 @@
 					</div>
 					<nav class="span8">
 						<ul>
-							<li><a href="#1">Producten</a></li>
+							<li><a href="#1" id="navProducten">Producten</a></li>
 							<li><a href="#1">Indra</a></li>
 							<li><a href="#1">Advies</a></li>
 							<li><a href="#1">Actueel</a></li>
@@ -40,23 +40,21 @@
 					<div class="span12" >
 						<div id="prodSlider">
 							<ul class="slides">
-								<li><a href="#1"><div class="title"></div></a></li>
-								<li><a href="#1"><div class="title"></div></a></li>
-								<li><a href="#1"><div class="title"></div></a></li>
-								<li><a href="#1"><div class="title"></div></a></li>
-								<li><a href="#1"><div class="title"></div></a></li>
-								<li><a href="#1"><div class="title"></div></a></li>
-								<li><a href="#1"><div class="title"></div></a></li>
-								<li><a href="#1"><div class="title"></div></a></li>
-								<li><a href="#1"><div class="title"></div></a></li>
-								<li><a href="#1"><div class="title"></div></a></li>
+								<li><a href="#1"><div class="prodIcon" style="background: transparent url(img/productIcons.png) no-repeat 0 0"></div><div class="title">Infiltratiesystemen</div></a></li>
+								<li><a href="#1"><div class="prodIcon" style="background: transparent url(img/productIcons.png) no-repeat -70px 0"></div><div class="title">Regenwater reinigingssystemen</div></a></li>
+								<li><a href="#1"><div class="prodIcon" style="background: transparent url(img/productIcons.png) no-repeat -140px 0"></div><div class="title">Gladwandbuis</div></a></li>
+								<li><a href="#1"><div class="prodIcon" style="background: transparent url(img/productIcons.png) no-repeat -210px 0"></div><div class="title">Ribbelbuis</div></a></li>
+								<li><a href="#1"><div class="prodIcon" style="background: transparent url(img/productIcons.png) no-repeat -280px 0"></div><div class="title">Putten en Kolken</div></a></li>
+								<li><a href="#1"><div class="prodIcon" style="background: transparent url(img/productIcons.png) no-repeat -350px 0"></div><div class="title">Verholen goten</div></a></li>
+								<li><a href="#1"><div class="prodIcon" style="background: transparent url(img/productIcons.png) no-repeat -420px 0"></div><div class="title">Lijnafwatering</div></a></li>
+								<li><a href="#1"><div class="prodIcon" style="background: transparent url(img/productIcons.png) no-repeat -490px 0"></div><div class="title">Groensystemen</div></a></li>
+								<li><a href="#1"><div class="prodIcon" style="background: transparent url(img/productIcons.png) no-repeat -560px 0"></div><div class="title">Engineering</div></a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
