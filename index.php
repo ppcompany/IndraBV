@@ -55,6 +55,37 @@
 				</div>
 			</div>
 		</div>
+		
+		<div id="sliderWrapper">
+			<div id="slider">
+				<ul class="slides">
+					<li style="background: transparent url(img/dummySlide03.jpg) no-repeat 0 0;">
+						<div class="overlay"></div>
+						<div class="container">
+							<div class="row">
+								<div class="span12"></div>
+							</div>
+						</div>
+					</li>
+					<li style="background: transparent url(img/dummySlide02.jpg) no-repeat 0 0;">
+						<div class="overlay"></div>
+						<div class="container">
+							<div class="row">
+								<div class="span12"></div>
+							</div>
+						</div>
+					</li>
+					<li style="background: transparent url(img/dummySlide01.jpg) no-repeat 0 0;">
+						<div class="overlay"></div>
+						<div class="container">
+							<div class="row">
+								<div class="span12"></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>

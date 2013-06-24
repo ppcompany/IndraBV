@@ -82,10 +82,9 @@ nav ul li a:hover {
   width: 100%;
   height: 150px;
   background: #fff;
-  margin-top: 90px;
+  margin-top: -60px;
   position: relative ;
   z-index: 0;
-  top: -140px;
 }
 #prodSlider {
   width: 800px;
@@ -178,4 +177,36 @@ nav ul li a:hover {
 }
 #prodSlider .flex-direction-nav li a.flex-next {
   background: transparent url(../img/productArrows.png) no-repeat -50px 0;
+}
+/* ################################ */
+/* ############# Slider ############## */
+/* ################################ */
+#sliderWrapper {
+  position: relative;
+  min-width: 940px;
+  max-width: 1280px;
+  height: 410px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#slider {
+  position: absolute;
+  left: 50%;
+  margin-left: -640px;
+  width: 1280px;
+  height: 410px;
+}
+#slider ul {
+  margin: 0;
+}
+#slider ul li {
+  display: none;
+  height: 410px;
+}
+#slider ul li .overlay {
+  display: block;
+  width: 100%;
+  height: 300px;
+  margin-top: 40px;
+  background: transparent url(../img/black25.png) repeat;
 }
