@@ -55,6 +55,7 @@
 				</div>
 			</div>
 		</div>
+
 		
 		<div id="sliderWrapper">
 			<div id="slider">
@@ -289,7 +290,7 @@
 						<a href="#1">Perfor-pipe</a>
 
 						<div class="prodCat">Regenwater reiningingssystemen</div>
-						<a href="#1">Sedipie</a>
+						<a href="#1">Sedipipe</a>
 
 						<div class="prodCat">Gladwandbuis </div>
 						<a href="#1">PP Volwand</a>

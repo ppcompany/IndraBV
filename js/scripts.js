@@ -8,11 +8,17 @@ $(function(){
 			$(this).removeClass('active');
 			$('#prodMenu').animate({
 				marginTop:	'-60px'
+			}, 250);
+			$('#sliderWrapper').animate({
+				marginTop:	'90px'
 			}, 250);			
 		}else{
 			$(this).addClass( 'active');
 			$('#prodMenu').animate({
-				marginTop:	'90px'
+				marginTop:	'150px'
+			}, 250);
+			$('#sliderWrapper').animate({
+				marginTop:	'240px'
 			}, 250);				
 		}
 		
