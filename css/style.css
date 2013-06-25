@@ -24,9 +24,55 @@ a:active,
 a:visited {
   color: #009acd;
   text-decoration: none;
+  transition: color ease 0.2s;
 }
 a:hover {
   text-decoration: underline;
+}
+a.btn-red {
+  display: inline-block;
+  padding: 8px 32px;
+  border: 2px #fff solid;
+  border-radius: 4px;
+  background: #cd003f;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: background ease 0.2s;
+  text-decoration: none;
+}
+a.btn-red:hover {
+  background: #009acd;
+}
+.btn-brown,
+a.btn-brown {
+  display: inline-block;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 4px;
+  background: #291f23;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: none;
+  box-shadow: none;
+  transition: background ease 0.2s;
+  text-decoration: none;
+}
+.btn-brown:hover,
+a.btn-brown:hover {
+  background: #009acd;
+}
+.horLine {
+  width: 100%;
+  height: 0;
+  border-top: 1px #fff solid;
+  opacity: 0.35;
+  margin: 25px 0;
 }
 /* ################################ */
 /* ############# header ############# */
@@ -201,12 +247,210 @@ nav ul li a:hover {
 }
 #slider ul li {
   display: none;
-  height: 410px;
+  height: 365px;
+  text-align: center;
+  padding-top: 65px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
 }
 #slider ul li .overlay {
+  position: absolute;
   display: block;
   width: 100%;
   height: 300px;
-  margin-top: 40px;
+  top: 45px;
   background: transparent url(../img/black25.png) repeat;
+  z-index: 0;
+}
+#slider ul li .container {
+  position: relative;
+  z-index: 1;
+}
+#slider ul li .content {
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  position: relative;
+}
+#slider ul li .stamp {
+  position: absolute;
+  width: 242px;
+  height: 283px;
+  background: transparent url(../img/stamp01.png) no-repeat 0 0;
+  left: -272px;
+}
+#slider ul li .line01,
+#slider ul li .line03 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+#slider ul li .line02 {
+  font-size: 38px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+#slider ul li table {
+  margin-bottom: 25px;
+}
+#slider ol {
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  margin-left: -470px;
+  width: 940px;
+  bottom: 10px;
+  z-index: 5;
+  list-style-type: none;
+  text-align: center;
+}
+#slider ol li {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+#slider ol li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-left: 15px;
+  overflow: hidden;
+  line-height: 9999;
+  background: #fff;
+  border: 2px #fff solid;
+  border-radius: 500px;
+  opacity: 0.70;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+#slider ol li:first-child a {
+  margin-left: 0;
+}
+#slider ol li a:hover,
+#slider ol li a.flex-active {
+  background: #009acd;
+  opacity: 1;
+}
+/* ################################ */
+/* ############# Sitemap ############ */
+/* ################################ */
+#sitemap {
+  min-width: 940px;
+  max-width: 1280px;
+  margin: 0 auto;
+  background: #291f23;
+  padding: 40px 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 33px;
+}
+#sitemap .span4 .prodCat {
+  margin-top: 34px;
+}
+#sitemap .span4 .prodCat:first-child {
+  margin: 0;
+}
+#sitemap .span4 a,
+#sitemap .span4 a:link,
+#sitemap .span4 a:active,
+#sitemap .span4 a:visited {
+  display: block;
+  color: #9a8d7d;
+  text-transform: none;
+  text-decoration: none;
+}
+#sitemap .span4 a:hover {
+  color: #009acd;
+}
+/* ################################ */
+/* ############## Footer ############ */
+/* ################################ */
+footer {
+  height: 70px;
+}
+footer .indrabv {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+footer span {
+  display: inline-block;
+  margin-left: 60px;
+}
+footer span:first-child {
+  margin: 0;
+}
+footer span a,
+footer span a:link,
+footer span a:active,
+footer span a:visited {
+  font-size: 14px;
+  color: #291f23;
+  text-decoration: none;
+  line-height: 70px;
+}
+footer span a:hover {
+  color: #009acd;
+}
+footer .span3 {
+  text-align: right;
+}
+/* ################################ */
+/* ############## Blocks ############ */
+/* ################################ */
+.block {
+  min-width: 940px;
+  max-width: 1280px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+/* ############# article ############# */
+.block.article {
+  text-align: center;
+  color: #9a8d7d;
+  font-weight: 300;
+}
+.block.article img {
+  margin-bottom: 20px;
+}
+.block.article h2 {
+  color: #009acd;
+  font-weight: 600;
+  font-size: 18;
+}
+/* ########### newsletter ########## */
+.block.newsletter {
+  color: #cac4be;
+  font-size: 15px;
+  font-weight: 300;
+}
+.block.newsletter .signup {
+  color: #291f23;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.block.newsletter h2 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.block.newsletter form {
+  margin: 0;
+}
+.block.newsletter input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  box-shadow: none;
+}
+.block.newsletter .btn-brown {
+  display: block;
+  padding: 11px 0 10px 0;
+  width: 100%;
 }

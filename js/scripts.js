@@ -30,8 +30,9 @@ $(window).load(function(){
 	        directionNav: 		true,
 	        prevText: 			"",
 	        nextText:			"",
-	        keyboard: 			true,
-	        slideshowSpeed: 	99999,
+	        keyboard:			false,
+	        multipleKeyboard: 	true, 
+	        slideshowSpeed: 	3000,
 	        start: function(slider){
 			$('body').removeClass('loading');
 			$('#prodSlider ul.slides li:first-child').addClass( 'border');
@@ -46,9 +47,10 @@ $(window).load(function(){
 	});
       $('#slider').flexslider({
       		animation:			"slide",
-      		controlNav: 		false,
+      		controlNav: 		true,
 	        directionNav: 		false,
 	        keyboard:			true,
-	        slideshowSpeed:	3000
+	        multipleKeyboard: 	true, 
+	        slideshowSpeed:	2000,
       });
 });
