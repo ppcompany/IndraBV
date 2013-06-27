@@ -1,6 +1,7 @@
 @font 				: 'Roboto', helvetica, arial, sans-serif; 
 
 @brown-dark			: #291f23;
+@brown-dark-mild		: #454245;
 @brown-medium 		: #757173;
 @brown-light 			: #9a8d7d;
 @brown-light-medium 		: #979495;
@@ -47,12 +48,11 @@ a:visited {
 		text-decoration: underline;
 	}
 
-a.btn-red {
+a[class*=btn-] {
 	display: inline-block;
 	padding: 8px 32px;
 	border: 2px #fff solid;
 	border-radius: 4px;
-	background: #cd003f;
 	font-size: 14px;
 	font-weight: 300;
 	color: #fff;
@@ -61,10 +61,22 @@ a.btn-red {
 	box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
 	transition: background ease 0.2s;
 	text-decoration: none;
+	margin-top: 10px;
+}
+a.btn-red {
+	background: #cd003f;
+}
+
+a.btn-blue {
+	background:  @blue;
 }
 
 a.btn-red:hover {
 	background:  @blue;
+}
+
+a.btn-blue:hover {
+	background:  #cd003f;
 }
 
 .btn-brown,
@@ -164,7 +176,7 @@ header {
 	top: -60px;
 	position: fixed ;
 	z-index: 5;
-
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
 
 #prodSlider {
@@ -278,6 +290,19 @@ header {
 
 
 /* ################################ */
+/* ########### marginTop ############ */
+/* ################################ */
+
+
+#marginTop {
+	position: relative;
+	display: block;
+	clear: both;
+	height: 90px;
+	width: 100%;
+}
+
+/* ################################ */
 /* ############# Slider ############## */
 /* ################################ */
 
@@ -286,7 +311,7 @@ header {
 	min-width: 940px;
 	max-width: 1280px;
 	height: 410px;
-	margin: 90px auto 0 auto;
+	margin: 0 auto 0 auto;
 	overflow: hidden;
 }
 
@@ -347,7 +372,7 @@ header {
 					#slider ul li .line03 {
 						font-size: 18px;
 						font-weight: 400;
-						margin-bottom: 25px;
+						margin-bottom: 15px;
 					}
 
 					#slider ul li .line02 {
@@ -367,7 +392,7 @@ header {
 	margin-left: -470px;
 	width: 940px;
 	 bottom: 10px;
-	 z-index: 5;
+	 z-index: 3;
 	 list-style-type: none;
 	 text-align: center;
 }
@@ -489,9 +514,26 @@ footer {
 .block {
 	min-width: 940px;
 	max-width: 1280px;
-	padding: 40px 0;
-	margin: 0 auto;
+	padding: 0;
+	margin: 10px auto 0;
+	overflow: hidden;
 }
+
+.blockSpacer {
+	display: block;
+	min-width: 940px;
+	max-width: 1280px;
+	padding: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 10px;
+	line-height: 0;
+}
+
+	.blockSpacer img {
+		
+	}
+
 
 /* ############# article ############# */
 
@@ -499,6 +541,7 @@ footer {
 	text-align: center;
 	color: @brown-light;
 	font-weight: 300;
+	padding: 40px 0 20px;
 }
 
 .block.article img {
@@ -517,6 +560,8 @@ footer {
 	color: #cac4be;
 	font-size: 15px;
 	font-weight: 300;
+	padding: 40px 0;
+	margin-bottom: 0;
 }
 	
 	.block.newsletter .signup {
@@ -552,7 +597,142 @@ footer {
 			width: 100%;
 		}
 
+/* ############ default ############ */
+
+.block.default {
+	color: #fff;
+	position: relative;
+}
+
+	.block.default .vertDivider {
+		position: absolute;
+		width: 1px;
+		background: #ccc9cb;
+		left: 50%;
+		top: 20px;
+		bottom: 20px;
+	}
+
+	.block.default .image {
+		overflow: visible ;
+	}
+
+		.block.default .image img {
+			
+		}
+
+		.block.default .image.left img:first-child {
+			margin-left: -170px;
+		}
 
 
+	.block.default .content {
+		padding: 20px 0;
+		font-weight: 400;
+	}
+
+		.block.default .content.light {
+			color: @brown-medium;
+		}
+
+		.block.default .content.dark {
+			color: #fff;
+		}
+
+		.block.default .content h2 {
+			display: block;
+			margin: 0 0 20px 0;
+			font-size: 24px;
+			line-height: 30px;
+			text-transform: uppercase;
+		}
+
+			.block.default .content.light h2 {
+				color: @brown-dark;
+			}
+
+			.block.default .content.dark h2 {
+				color: #fff;
+			}
+
+		.block.default .content h3 {
+			display: block;
+			color: @blue;
+			font-size: 14px;
+			font-weight: 400;
+			text-transform: uppercase;
+			line-height: 20px;
+			margin: 0;
+		}
+
+		.block.default .content ul {
+			margin: 0 0 0 15px;
+			position: relative;
+		}
+
+		.block.default .content  ul {
+			list-style-image: url(../img/bulletLight.png);
+		}
+
+		.block.default .content.white ul {
+			list-style-image: url(../img/bulletDark.png);
+		}
+
+			.block.default .content ul li {
+				margin: 0;
+				padding-left: 20px;
+				line-height: 24px;
+			}
+
+		.block.default .content hr {
+			height: 1px;
+			border: none;
+			background: #ccc9cb;
+			margin: 10px 0;
+		}
+
+	.block.default img.stamp {
+		position: absolute;
+		top: 20px;
+	}
+
+		.block .left img.stamp {
+			left: 20px;
+		}
+
+		.block .right img.stamp {
+			right: 20px;
+		}
+	
+	.block.default table {
+		border-collapse: separate;
+		border: 1px transparent solid;
+		border-radius: 4px;
+		width: auto;
+	}
+
+	.block.default .table-striped th {
+		background: @brown-dark;
+	}
+
+	.block.default .table-striped td {
+		background: #fff;
+		color: @brown-medium;
+		border-top: 1px @blue solid;
+	}
+
+	.block.default .table-striped tr:first-child td{
+		border: none;
+	}
+
+	.block.default .table-striped tr th,
+	.block.default .table-striped tr td {
+		padding: 4px 12px;
+	}
+
+	.block.default .table-striped tbody>tr:nth-child(odd)>td {
+		background: #e5f5fa;
+		color: @brown-medium;
+	}
 
 

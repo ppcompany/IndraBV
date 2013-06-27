@@ -24,10 +24,10 @@
 					<nav class="span8">
 						<ul>
 							<li><a href="#1" id="navProducten">Producten</a></li>
-							<li><a href="#1">Indra</a></li>
-							<li><a href="#1">Advies</a></li>
-							<li><a href="#1">Actueel</a></li>
-							<li><a href="#1">Contact</a></li>
+							<li><a href="blocks.php">Indra</a></li>
+							<li><a href="index.php">Advies</a></li>
+							<li><a href="blocks.php">Actueel</a></li>
+							<li><a href="index.php">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -56,6 +56,7 @@
 			</div>
 		</div>
 
+		<div id="marginTop"></div>
 		
 		<div id="sliderWrapper">
 			<div id="slider">
@@ -246,12 +247,12 @@
 						<p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet.</p>
 					</div>
 					<div class="span3">
-						<img src="img/iconHomeOndersteuning" width="120">
+						<img src="img/iconHomeOndersteuning.png" width="120">
 						<h2>Technische ondersteuning</h2>
 						<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean Tristique Condimentum.</p>
 					</div>
 					<div class="span3">
-						<img src="img/iconHomeOndersteuning" width="120">
+						<img src="img/iconHomeDocumentatie.png" width="120">
 						<h2>Download documentatie</h2>
 						<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean Tristique Condimentum.</p>
 					</div>
