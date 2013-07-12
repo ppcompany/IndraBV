@@ -57,6 +57,8 @@ $(function(){
 			
 		});
 	}
+
+
 				
 });
 
@@ -91,6 +93,6 @@ $(window).load(function(){
 	        directionNav: 		false,
 	        keyboard:			true,
 	        multipleKeyboard: 	true, 
-	        slideshowSpeed:	2000,
+	        slideshowSpeed:	4500
       });
 });

@@ -11,6 +11,11 @@
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
 	</head>
 
 	<body>
@@ -211,7 +216,7 @@
 			</div>
 		</div>
 		<!--
-		<div class="block article threeCol">
+		<div class="block call2action threeCol">
 			<div class="container">
 				<div class="row">
 					<div class="span4">
@@ -233,7 +238,7 @@
 			</div>
 		</div>
 		-->
-		<div class="block article fourCol">
+		<div class="block call2action fourCol">
 			<div class="container">
 				<div class="row">
 					<div class="span3">
@@ -343,7 +348,7 @@
 			</div>
 		</footer>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/slider.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>

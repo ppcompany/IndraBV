@@ -92,6 +92,7 @@ header {
   background: #291f23 url(../img/headerBG.png) repeat-x left 70px;
   height: 90px;
   position: fixed;
+  display: block;
   left: 0;
   top: 0;
   z-index: 10;
@@ -421,177 +422,157 @@ footer .span3 {
 /* ############## Blocks ############ */
 /* ################################ */
 .block {
-  min-width: 940px;
-  max-width: 1280px;
-  padding: 0;
-  margin: 10px auto 0;
-  overflow: hidden;
-}
-.blockSpacer {
   display: block;
-  min-width: 940px;
   max-width: 1280px;
-  padding: 0;
-  margin: 0 auto;
-  overflow: hidden;
-  height: 10px;
-  line-height: 0;
+  min-width: 940px;
+  background: #fff;
+  min-height: 380px;
+  margin: 10px auto 0 auto;
+  padding-bottom: 20px;
+  overflow-x: hidden;
+  position: relative;
+  font-weight: 300;
 }
-/* ############# article ############# */
-.block.article {
+.block > .blockContent {
+  display: block;
+  width: 1280px;
+  height: auto;
+  left: 50%;
+  margin-left: -640px;
+  position: absolute;
+}
+.block .blockLeft {
+  display: block;
+  float: left;
+  width: 640px;
+  min-height: 380px;
+}
+.block .blockRight {
+  display: block;
+  float: left;
+  width: 640px;
+  min-height: 380px;
+  position: relative;
+}
+.block h2 {
+  color: #009acd;
+  font-weight: 600;
+}
+.block.light {
+  color: #d4d2d3;
+}
+.block.dark {
+  color: #291f23;
+}
+/* ########## dummyStamp ########## */
+.block > .stamp {
+  display: block;
+  height: auto;
+  width: 130px;
+  position: absolute;
+  z-index: 1;
+}
+.block > .stamp.stampLeft {
+  left: 20px;
+  top: 20px;
+}
+.block > .stamp.stampRight {
+  right: 20px;
+  top: 20px;
+}
+/* ############# arrows ########### */
+.block .arrowLeft {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #21191c;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  margin-top: -10px;
+}
+.block .arrowDown {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #21191c;
+  position: absolute;
+  bottom: -10px;
+  left: 150px;
+}
+/* ############# 3/4 Column ############# */
+.block.call2action {
+  margin-top: 40px;
+  min-height: auto;
   text-align: center;
   color: #9a8d7d;
   font-weight: 300;
-  padding: 40px 0 20px;
 }
-.block.article img {
+.block.call2action img {
   margin-bottom: 20px;
 }
-.block.article h2 {
-  color: #009acd;
-  font-weight: 600;
-  font-size: 18;
-}
-/* ########### newsletter ########## */
+/* ############# newsletter ############# */
 .block.newsletter {
-  color: #cac4be;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  min-height: auto;
+  color: #d4d2d3;
   font-size: 15px;
   font-weight: 300;
-  padding: 40px 0;
-  margin-bottom: 0;
-}
-.block.newsletter .signup {
-  color: #291f23;
-  font-weight: 600;
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
 }
 .block.newsletter h2 {
   color: #fff;
-  font-size: 26px;
-  font-weight: 400;
+  font-size: 28px;
   text-transform: uppercase;
-  margin-bottom: 18px;
+  font-weight: 400;
+}
+.block.newsletter .signup {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #291f23;
 }
 .block.newsletter form {
   margin: 0;
+  padding: 0;
 }
-.block.newsletter input {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.block.newsletter form input {
   border: none;
   box-shadow: none;
+  color: #291f23;
+  padding: 10px 12px;
+  width: 196px;
 }
-.block.newsletter .btn-brown {
-  display: block;
-  padding: 11px 0 10px 0;
-  width: 100%;
-}
-/* ############ default ############ */
-.block.default {
-  color: #fff;
-  position: relative;
-}
-.block.default .vertDivider {
-  position: absolute;
-  width: 1px;
-  background: #ccc9cb;
-  left: 50%;
-  top: 20px;
-  bottom: 20px;
-}
-.block.default .image {
-  overflow: visible ;
-}
-.block.default .image.left img:first-child {
-  margin-left: -170px;
-}
-.block.default .content {
-  padding: 20px 0;
-  font-weight: 400;
-}
-.block.default .content.light {
-  color: #757173;
-}
-.block.default .content.dark {
-  color: #fff;
-}
-.block.default .content h2 {
-  display: block;
-  margin: 0 0 20px 0;
-  font-size: 24px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-.block.default .content.light h2 {
+.block.newsletter form input::-webkit-input-placeholder {
+  /* WebKit browsers */
+
   color: #291f23;
 }
-.block.default .content.dark h2 {
-  color: #fff;
+.block.newsletter form input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+
+  color: #291f23;
 }
-.block.default .content h3 {
-  display: block;
-  color: #009acd;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 20px;
-  margin: 0;
+.block.newsletter form input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+
+  color: #291f23;
 }
-.block.default .content ul {
-  margin: 0 0 0 15px;
-  position: relative;
+.block.newsletter form input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+
+  color: #291f23;
 }
-.block.default .content ul {
-  list-style-image: url(../img/bulletLight.png);
+.block.newsletter form button {
+  padding: 10px 15px 11px 15px;
+  width: 100%;
+  color: #d4d2d3;
 }
-.block.default .content.white ul {
-  list-style-image: url(../img/bulletDark.png);
-}
-.block.default .content ul li {
-  margin: 0;
-  padding-left: 20px;
-  line-height: 24px;
-}
-.block.default .content hr {
-  height: 1px;
-  border: none;
-  background: #ccc9cb;
-  margin: 10px 0;
-}
-.block.default img.stamp {
-  position: absolute;
-  top: 20px;
-}
-.block .left img.stamp {
-  left: 20px;
-}
-.block .right img.stamp {
-  right: 20px;
-}
-.block.default table {
-  border-collapse: separate;
-  border: 1px transparent solid;
-  border-radius: 4px;
-  width: auto;
-}
-.block.default .table-striped th {
-  background: #291f23;
-}
-.block.default .table-striped td {
-  background: #fff;
-  color: #757173;
-  border-top: 1px #009acd solid;
-}
-.block.default .table-striped tr:first-child td {
-  border: none;
-}
-.block.default .table-striped tr th,
-.block.default .table-striped tr td {
-  padding: 4px 12px;
-}
-.block.default .table-striped tbody > tr:nth-child(odd) > td {
-  background: #e5f5fa;
-  color: #757173;
+/* ############## textBlock ############## */
+.block.default .blockRight.blockText {
+  padding: 20px 180px 20px 60px;
+  min-height: 340px;
+  width: 400px;
 }
